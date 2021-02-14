@@ -1,18 +1,15 @@
-import discord
 import os
+import json
 
-client = discord.Client()
+from client import AmbienceClient
 
-@client.event
-async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+if __name__ == "__main__":
+  # Import config
+  with open('config.json') as f:
+    config = json.load(f)
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+  client = AmbienceClient(config)
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
-
-client.run(os.getenv('TOKEN'))
+  # TODO: Create music handler
+  # TODO: Create picture handler
+  client.run(os.getenv('TOKEN'))

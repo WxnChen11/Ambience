@@ -1,0 +1,22 @@
+{
+  "channel_config": {
+    "Library Commons": {
+      "music bot name": "Groovy#7254",
+      "music bot class": "groovy",
+      "music bot join": "!>g -j",
+      "chat room name": "library-commons"
+    },
+    "Gate B43": {
+      "music bot name": "Rythm#3722",
+      "music bot class": "rythm",
+      "music bot join": "!>r1 join",
+      "chat room name": "gate-b43"
+    },
+    "Ninth Street Espresso": {
+      "music bot name": "Rythm 2#2000",
+      "music bot class": "rythm",
+      "music bot join": "!>r2 join",
+      "chat room name": "ninth-street-espresso"
+    }
+  }
+}
