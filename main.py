@@ -4,11 +4,7 @@ import json
 from client import AmbienceClient
 
 if __name__ == "__main__":
-  # Import config
-  with open('config.json') as f:
-    config = json.load(f)
-
-  client = AmbienceClient(config)
+  client = AmbienceClient('Ninth Street Espresso#5861')
 
   # TODO: Create music handler
   # TODO: Create picture handler
